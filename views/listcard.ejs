@@ -1,0 +1,18 @@
+<div class="col-md-6">
+    <div>
+        <div class="row m-2 customCard">
+            <div class="col-sm-12 col-lg-12 col-xl-10 imagePlaceholder d-flex justify-content-center p-2">
+                <canvas id=<%= "imageCanvas"+imageData[id].imageID  %>></canvas>
+                <div id=<%= "labelHolder"+imageData[id].imageID  %>></div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-xl-2 d-flex flex-column align-self-center">
+                <a class="btn btn-outline-primary w-100 mb-2" href=<%= "/image/edit/" + imageData[id].imageID %>>
+                    Újra
+                </a>
+                <a class="btn btn-outline-danger w-100 mb-2" href=<%= "/image/delete/" + imageData[id].imageID %>>
+                    Törlés
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

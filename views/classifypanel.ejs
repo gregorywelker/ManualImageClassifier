@@ -1,0 +1,38 @@
+<div class="col-md-12 col-xl-8 mt-4 classifyParent">
+    <div class="container">
+        <div class="customCard">
+            <div class="card-header mb-2">
+                <h5 class="my-0 font-weight-normal">Klasszifikálás</h5>
+            </div>
+            <form action="/image/new" method="POST" enctype="multipart/form-data" id="classifyForm">
+                <div class="input-group p-3">
+                    <input type="text" class="form-control" aria-label="" aria-describedby="basic-addon1" id="fileName"
+                        placeholder="Fájl neve" disabled="disabled" />
+                    <div class="input-group-append">
+                        <div class="btn btn-secondary rounded-right" onclick="getFile()">Fájl kiválasztása</div>
+                        <div style='height: 0px;width: 0px; overflow:hidden;'>
+                            <input id="realUploadBtn" type="file" name="classifiedImage" accept="image/*"
+                                onchange="addPreview(event)" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body mb-3 classifyImagePlaceholder">
+                    <div id="imageHolder" class="d-flex justify-content-center">
+                        <canvas id="canvas"></canvas>
+                        <div id="serverimageid" name=<% if (locals.singleImageData) { %>
+                            <%=locals.singleImageData.imageName %> <%} else { %> none
+                            <% } %>style="visibility: hidden;"></div>
+                        <div id="labelHolder"></div>
+                    </div>
+                </div>
+                <input name="rects" id="rectData" style="visibility: hidden;"></input>
+                <input name="imageid" id="imageidData" style="visibility: hidden;"></input>
+                <div class=" d-flex justify-content-between ml-5 mb-3 mr-5">
+                    <label onclick="resetRects()" class="btn btn-outline-danger">Újra</label>
+                    <button type="submit" class="btn btn-primary"> Mentés </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

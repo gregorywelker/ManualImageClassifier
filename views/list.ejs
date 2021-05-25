@@ -1,0 +1,15 @@
+<%- include('header') -%>
+<%- include('navbar') -%>
+
+<div class="row m-2">
+    <div class="col-12 col-xl-2">
+        <%- include('listtagpanel.ejs') -%>
+        <%- include('newtagpanel.ejs') -%>
+    </div>
+    <div class="col-12 col-xl-8 mt-3">
+        <div class="d-flex flex-wrap" id="cardHolder">
+
+        </div>
+    </div>
+    <script src="/list.js"></script>
+    <%- include('footer') -%>

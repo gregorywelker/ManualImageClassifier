@@ -1,0 +1,21 @@
+{
+  "name": "szerver_oldali_js_hazi",
+  "version": "1.0.0",
+  "description": "VITMAV42 - Szerver oldali JavaScript - ECKCA4 - Hazi feladat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gergo Welker",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.10.11",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.6"
+  }
+}

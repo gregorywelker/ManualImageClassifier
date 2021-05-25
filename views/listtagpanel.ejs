@@ -1,0 +1,27 @@
+<div class="sideCard mb-4 mt-4">
+    <div class="card-header">
+        <h5 class="my-0 font-weight-normal">Listázás</h5>
+    </div>
+    <div class="card-body">
+        <ul class="list-unstyled">
+            <li><label>Címkék:</label></li>
+            <% tags.map(function(tag){ %>
+            <%- include('listtag.ejs', {tag:tag.name}) -%>
+            <% }); %>
+
+            <li>
+                <div class="row">
+                    <div class="col">
+                        <button onclick="listAll()" id="submit" name="button" value="register"
+                            class="btn btn-secondary">
+                            Összes
+                        </button>
+                        <button onclick="listNone()" id="cancel" name="button" value="cancel" class="btn btn-secondary">
+                            Egyik sem
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="sideCard mb-4">
+    <div class="card-header">
+        <h5 class="my-0 font-weight-normal">Címke felvétele / törlése</h5>
+    </div>
+    <div class="card-body">
+        <form>
+            <form>
+                <label for="tagInput">Címke neve:</label>
+                <input type="input" class="form-control mb-2" name="tag" placeholder="Pl: elefánt" />
+
+                <button formaction="/tag/new" formmethod="POST" type="submit" class="btn btn-secondary">
+                    Hozzáadás
+                </button>
+                <button formaction="/tag/delete" formmethod="POST" type="submit" class="btn btn-danger btn-secondary">
+                    Törlés
+                </button>
+            </form>
+        </form>
+    </div>
+</div>

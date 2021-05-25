@@ -1,0 +1,12 @@
+<div class="sideCard mb-4">
+    <div class="card-header">
+        <h5 class="my-0 font-weight-normal">Címkék</h5>
+    </div>
+    <div class="card-body">
+        <ul class="list-unstyled">
+            <% tags.map(function(tag){ %>
+            <%- include('classifytag.ejs', {tag:tag.name, id:tag.name}) -%>
+            <% }); %>
+        </ul>
+    </div>
+</div>

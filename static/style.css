@@ -1,0 +1,41 @@
+body {
+  padding-top: 55px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.customCard {
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px lightgray;
+}
+
+.sideCard {
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px lightgray;
+}
+
+.imagePlaceholder {
+  background-color: whitesmoke;
+}
+
+.classifyParent {
+  margin-bottom: 300px;
+}
+
+.classifyImagePlaceholder {
+  background-color: whitesmoke;
+  height: 600px;
+}
+
+.loginParent {
+  width: 350px;
+  margin-top: 200px;
+}
